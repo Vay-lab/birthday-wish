@@ -33,6 +33,7 @@ button:active{
     text-align:center;
     animation: colorShift 3s infinite;
     font-weight: bold;
+    margin:10px auto;
   }
   .balloon-style{
     font-size: 30px; 
