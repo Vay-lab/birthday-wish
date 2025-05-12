@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+        <h1 class="live-text">🎉 Happy Birthday 🎉</h1>
+        <button class="click">Click Here</button>
+        <p style="text-align:center; font-size:30px">🎂🎂🎂</p>
+        <p id="result"></p>
+        <div class="balloon-style">
+            <span class="balloon">🎈🎈</span>
+            <span class="balloon" style="animation-delay: 0.5s">🎈🎈</span>
+            <span class="balloon" style="animation-delay: 1s">🎈🎈</span>
+        </div>
+        
+
+        <script>
+            const click=document.querySelector(".click");
+            const result=document.querySelector("#result");
+            const Msg="Happy Birthday! Wishing you a day filled with love, laughter, and hoping you to enjoy your special day.";
+            function displayMsg(){
+                result.textContent=Msg;
+
+            }
+            click.addEventListener("click",displayMsg);
+
+        </script>
+
+
+ 
+
+ 
+</body>
+</html>

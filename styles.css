@@ -1,0 +1,60 @@
+html{
+    background-color: rgb(186, 163, 180);
+}
+
+.click{
+    padding:10px 20px;
+    display:block;
+    margin:20px auto;
+    background-color:  #ff80ab;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+    transition:transform 0.3s;
+}
+.click:hover{
+    transform:scale(1.2);
+}
+
+button:active{
+    background-color: #d44c79;
+    color:black;
+}
+@keyframes colorShift {
+    0%   { color: #ff4081; }
+    25%  { color: #7c4dff; }
+    50%  { color: #18ffff; }
+    75%  { color: #ffeb3b; }
+    100% { color: #ff4081; }
+  }
+  
+  .live-text {
+    font-size:50px;
+    text-align:center;
+    animation: colorShift 3s infinite;
+    font-weight: bold;
+  }
+  .balloon-style{
+    font-size: 30px; 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    text-align: center;
+  }
+/* Floating balloons animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+  }
+  .balloon {
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
+  }
+  #result{
+    margin:20px;
+    padding:10px;
+    color:rgb(21, 11, 11);
+    text-align: center;
+    border:2px solid rgb(29, 2, 2);
+  }
